@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "Calibri", sans-serif;
+        text-align: center;
+      }
+
+      html {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/militarybanner-large.png");
+        min-height: 75%;
+      }
+      
+  /* Default styles for larger screens */
+  .w3-navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .w3-navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    /* Styles for smaller screens */
+    @media only screen and (max-width: 600px) {
+      .w3-navbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .w3-navbar a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+      /* Style for the dropdown button */
+      .w3-dropdown-hover button {
+        background-color: #b22234;
+        color: white;
+      }
+
+      /* Style for the links inside the dropdown */
+      .w3-dropdown-content a {
+        background-color: #b22234;
+      }
+
+      /* Remove focus outline for all .w3-button except those with .ignore-outline class */
+      .w3-button:focus:not(.ignore-outline) {
+        outline: none;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      /* Styles for the normal navigation bar */
+      .w3-row.w3-padding.american-flag {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* Styles for the sidebar on small screens */
+      @media screen and (max-width: 600px) {
+        .w3-row.w3-padding.american-flag {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .w3-row.w3-padding.american-flag .w3-col {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+
+        .w3-dropdown-hover {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Links in Nav Bar -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding american-flag">
+        <div class="w3-col m2 l2">
+          <a href="index.html" class="w3-button w3-block">Home</a>
+        </div>
+        <div class="w3-col m2 l2">
+          <a href="loans.html" class="w3-button w3-block">Loans</a>
+        </div>
+        <div class="w3-col m2 l2">
+          <a href="#about" class="w3-button w3-block">About</a>
+        </div>
+        <div class="w3-col m2 l2">
+          <a href="index.html#chapter" class="w3-button w3-block">Students</a>
+        </div>
+        <div class="w3-col m2 l2">
+          <!-- Dropdown menu for RESOURCES -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button">Resources</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="color: white;">
+              <a href="education.html" class="w3-bar-item w3-button">Education</a>
+              <a href="https://www.sba.gov/business-guide/grow-your-business/veteran-owned-businesses#id-training-programs" class="w3-bar-item w3-button" target="_blank">Business Startup</a>
+              <a href="https://988lifeline.org/help-yourself/veterans/" class="w3-bar-item w3-button" target="_blank">Help in Crisis</a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m2 l2">
+          <a href="#findus" class="w3-button w3-block">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="img/militarybanner-large.png" alt="" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+        <h3>Welcome to Our Student Military Resources</h3>
+        <p>
+          <b>We aim to provide our military community with the neccessary tools to futher their academic and personal endeavors.</b>
+        </p>
+      </div>
+    </div>
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64">
+          <span class="w3-tag w3-wide">Our History</span>
+        </h5>
+        <p>In the Fall of 2023, I was inspired to create a community supporting military individuals in their academic pursuits. Fueled by a desire to ensure our veterans thrive in college, I embarked on a journey to connect them with the resources they need. </p>
+        <p>In addition, I am working on building an online platform and establishing strategic partnerships, my goal is to provide a supportive network that empowers military personnel to excel in their academic endeavors. As I progress on this mission, I invite like-minded individuals to join me in making a meaningful impact on the educational journey of our veterans.</p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p>
+            <i>“A great leader is one who knows the way, goes the way, and shows the way. “ ~ John C. Maxwell </i>
+          </p>
+          <img src="img/jose.jpg" style="width:100%; max-width:500px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" alt="Photo" class="w3-margin-top">
+          <p> Marine Veteran & Website Creator:</p>
+          <p>
+            <strong>Jose J. Cintron Ortiz</strong>
+          </p>
+        </div>
+      </div>
+      <!-- SVA Container -->
+      <div class="w3-container" id="chapter">
+        <div class="w3-content" style="max-width:500px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">Student Veterans of America Chapter (SVA)</span>
+          </h5>
+          <img src="img/sva-logo.png" style="max-width: 100%; padding: 15px;" alt="SVA Logo">
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'About');" id="myLink">
+              <div class="w3-col s6 tablink w3-dark-grey">About</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Resources');">
+              <div class="w3-col s6 tablink">Resources</div>
+            </a>
+          </div>
+          <div id="About" class="w3-container menu w3-padding-48 w3-card" style="background-color: #b22234; color: white; display: block;">
+            <h5>The UNH Manchester Student Veterans of America Chapter’s mission is to establish a veteran friendly environment, as well as promote UNH to veterans who are looking to further their education. Student Veterans of America (SVA) Chapter will assist veterans in taking full advantage of their education benefits and will lend support to local veteran organizations. </h5>
+            <h5>The SVA Chapter provides student military veterans, active-duty military members, and Guardsmen an organization for support and information pertaining to the Veteran Administration and the University of New Hampshire. In addition to Veteran VA education and medical benefits information, the Student Veterans of America Chapter would also provide a stress free and relaxed environment for its members to connect with military peers of UNH.</h5>
+            <h5>Furthermore, the Student Veterans of America Chapter will build exceptional relationships within the university and community, as well as team building atmosphere for peer support and advising.</h5>
+          </div>
+          <div id="Resources" class="w3-container menu w3-padding-48 w3-card" style="background-color: #b22234; color: white; display: none;">
+            <!-- Header: How can I verify enrollment? -->
+            <h4>How can I verify enrollment?</h4>
+            <ul>
+              <li>You can verify your enrollment via text message or by calling the Education Call Center (ECC) 1-888-GIBILL-1 (1-888-442-4551).</li>
+              <li>The ECC can also help you opt into text verification.</li>
+              <li>VA strongly recommends verifying enrollment via text.</li>
+              <li>If adding or dropping courses, make sure to reach out to a certifying official to keep your BAH on schedule.</li>
+            </ul>
+            <!-- Header: Federal Pell Grant Funds and Iraq & Afghanistan Service Grant -->
+            <h4>Federal Pell Grant for Iraq & Afghanistan Service </h4>
+            <ul>
+              <li>If your parent or guardian died because of military service in Iraq or Afghanistan after the events of 9/11, you may be eligible for additional aid.</li>
+              <li>To be eligible, at the time of your parent’s or guardian’s death, you must have been less than 24 years old or enrolled at least part-time at a college or career school.</li>
+              <li>Payments will be adjusted if you are enrolled less than full-time.</li>
+            </ul>
+            <!-- Header: Federal Pell Grants -->
+            <h4>Federal Pell Grants</h4>
+            <ul>
+              <li>If you meet the requirements above and are eligible to receive a Pell Grant, you will receive an Expected Family Contribution (EFC) of zero, which maximizes your Pell Grant eligibility and can increase your eligibility for other federal student aid programs.</li>
+            </ul>
+            <!-- Header: Iraq and Afghanistan Service Grants -->
+            <h4>Iraq and Afghanistan Service Grants</h4>
+            <ul>
+              <li>If you meet the requirements above but are not eligible for a Pell Grant based on your EFC, you will be eligible to receive the Iraq and Afghanistan Service Grant.</li>
+              <li>The maximum amount of the Iraq and Afghanistan Service Grant is the same as the maximum Pell Grant award.</li>
+              <li>Your EFC will not be affected, and therefore neither will your eligibility for any need-based federal student aid.</li>
+            </ul>
+          </div>
+          <img src="W3.CSS_Template_files/img/unhm-sign.jpg" alt="" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+      </div>
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="findus" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h2 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">Location</span>
+          </h2>
+          <p>Find us at: 88 Commercial St, Manchester, NH 03101</p>
+          <img src="img/manchester.jpeg" alt="City of Manchester" class="w3-image" style="width:100%">
+          <p>
+            <span class="w3-tag">Contact Us</span> Any further questions you may have can be asked below.
+          </p>
+          <p>
+            <strong>Response Time:</strong> Please allow 1-2 days for a response.
+          </p>
+          <form action="https://www.w3schools.com/action_page.php" target="_blank">
+            <p>
+              <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name">
+            </p>
+            <p>
+              <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required="" name="Message">
+            </p>
+            <p>
+              <button class="w3-button w3-black" type="submit">Send Message</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!-- End page content -->
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+      </p>
+    </footer>
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
+</html>

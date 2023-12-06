@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-qCCRsBOkBwStzsAH3i4WmNzGyk60Fxttkskj5V7Ua9XQI67UOMe5AsHQvzopvN/7xgCwMRKui/8l53lVJsU38A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- W3.CSS stylesheet -->
+    <link rel="stylesheet" href="w3.css">
+  </head>
+  <style>
+    body,
+    html {
+      font-family: "Calibri", sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      background-image: url('img/backgroundimage.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .w3-top {
+      z-index: 1000;
+    }
+
+    .mySlides {
+      position: relative;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+
+    .w3-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .w3-text-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    ul.w3-text-grey {
+      text-align: left;
+      padding-left: 0;
+    }
+
+    ul.w3-text-grey li {
+      list-style: none;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    /* Style for the dropdown button */
+    .w3-dropdown-hover button {
+      background-color: #b22234;
+      color: white;
+      /* Change text color if needed */
+    }
+
+    /* Style for the links inside the dropdown */
+    .w3-dropdown-content a {
+      background-color: #b22234;
+    }
+
+    .info-section {
+      border: 50px solid #b22234;
+      /* Add a 1px solid border with a light gray color */
+      padding: 10px;
+      /* Add some padding for spacing */
+      margin-bottom: 20px;
+      /* Add margin at the bottom to separate sections */
+    }
+
+    @media screen and (max-width: 600px) {
+      .bgimg {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  </style>
+  <!-- Links in Nav Bar -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding american-flag">
+      <div class="w3-col m2 l2">
+        <a href="index.html" class="w3-button w3-block">Home</a>
+      </div>
+      <div class="w3-col m2 l2">
+        <a href="loans.html" class="w3-button w3-block">Loans</a>
+      </div>
+      <div class="w3-col m2 l2">
+        <a href="#about" class="w3-button w3-block">About</a>
+      </div>
+      <div class="w3-col m2 l2">
+        <a href="index.html#chapter" class="w3-button w3-block">Students</a>
+      </div>
+      <div class="w3-col m2 l2">
+        <!-- Dropdown menu for RESOURCES -->
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">Resources</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="education.html" class="w3-bar-item w3-button">Education</a>
+            <a href="https://www.sba.gov/business-guide/grow-your-business/veteran-owned-businesses#id-training-programs" class="w3-bar-item w3-button" target="_blank">Business Startup</a>
+            <a href="https://988lifeline.org/help-yourself/veterans/" class="w3-bar-item w3-button" target="_blank">Help in Crisis</a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m2 l2">
+        <a href="#findus" class="w3-button w3-block">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img/resources.jpg" alt="" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32"></div>
+  </div>
+  <!-- Checklist and Resources Container -->
+  <div class="w3-container" id="checklist">
+    <div class="w3-content w3-text-box" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64">
+        <span class="w3-tag w3-wide">Checklist and Resources</span>
+      </h5>
+      <p>Here is the To Do List for Service Members attending UNH Manchester:</p>
+      <!-- Checklist Items -->
+      <ul class="w3-text-grey">
+        <li>
+          <strong>Complete the Application Process:</strong> Visit the Admissions Office at 88 Commercial Street, Manchester, NH, 03101 or apply online at <a href="http://manchester.unh.edu" target="_blank" rel="noopener noreferrer">manchester.unh.edu</a>.
+        </li>
+        <li>
+          <strong>Submit FAFSA:</strong> Complete the Free Application for Student Aid (FAFSA) online at <a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener noreferrer">fafsa.ed.gov</a>.
+        </li>
+        <li>
+          <strong>Apply for GI Bill®:</strong> Visit <a href="http://www.gibill.va.gov" target="_blank" rel="noopener noreferrer">gibill.va.gov</a> and select "Apply for Benefits".
+        </li>
+        <li>
+          <strong>Provide Certificate of Eligibility:</strong> Submit a copy of your Certificate of Eligibility to the UNH Manchester Student Accounts Office at 88 Commercial Street.
+        </li>
+        <li>
+          <strong>Submit Enrollment Certification Request:</strong> Complete the UNH VETERANS' Enrollment Certification Request form available at <a href="https://manchester.unh.edu/admissions/military-veteran-students" target="_blank" rel="noopener noreferrer">manchester.unh.edu/student/veterans-services</a>. Submit the form up to 4 months prior to the first day of the semester and every semester you intend to use benefits.
+        </li>
+        <li>
+          <strong>Attend On-campus Orientation:</strong> Call 603-641-4170 to register for an on-campus orientation.
+        </li>
+        <li>
+          <strong>Schedule a Meeting with an Advisor:</strong> Register for your classes and meet with Jennifer in the Student Accounts office for certification.
+        </li>
+      </ul>
+      <!-- Additional Information -->
+      <p>For more information and support, contact the UNH Manchester Veterans' Services.</p>
+    </div>
+  </div>
+  <!-- Container for Images -->
+  <div class="w3-container w3-border w3-round-large w3-light-grey w3-padding-32">
+    <!-- UNH -->
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/unh-far.jpeg" style="width:100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" alt="Loan" class="w3-margin-top">
+    </div>
+    <!-- Military Banner -->
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/militarybanner-large copy.png" style="width:100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" alt="Another Image" class="w3-margin-top">
+    </div>
+    <!-- Manchester -->
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/manchester.jpeg" style="width:100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" alt="Another Image" class="w3-margin-top">
+    </div>
+  </div>
+  </div>
+  <img src="W3.CSS_Template_files/img/unhm-sign.jpg" alt="" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+  <!-- UNH City Campus - Manchester, NH Container -->
+  <div class="w3-container" id="unh-manchester">
+    <div class="w3-content w3-text-box" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64">
+        <span class="w3-tag w3-wide">Quick Facts of UNH Campus - Manchester, NH</span>
+      </h5>
+      <!-- Campus Information -->
+      <div class="info-section">
+        <h6>Campus</h6>
+        <ul class="w3-text-grey">
+          <li>
+            <strong>Established:</strong> 1985
+          </li>
+          <li>
+            <strong>Location:</strong> Heart of the state’s biggest city (110,000 residents)
+          </li>
+          <li>
+            <strong>Building:</strong> Pandora Building, a renovated mill in the city’s historic Mill Yard
+          </li>
+          <li>
+            <strong>Distance:</strong> 45 minutes from UNH’s main campus in Durham, one hour to Boston, 20 minutes to Concord
+          </li>
+          <li>
+            <strong>College & Schools:</strong> One of UNH’s 11 colleges & schools
+          </li>
+        </ul>
+      </div>
+      <!-- Financial Aid Information -->
+      <div class="info-section">
+        <h6>Financial Aid</h6>
+        <ul class="w3-text-grey">
+          <li>
+            <strong>Percentage:</strong> 90% of students receive financial aid
+          </li>
+          <li>
+            <strong>Scholarships:</strong> $1 million in scholarships awarded annually
+          </li>
+        </ul>
+      </div>
+      <!-- Student Life Information -->
+      <div class="info-section">
+        <h6>Student Life</h6>
+        <ul class="w3-text-grey">
+          <li>
+            <strong>Number of Students:</strong> 1,000+ undergraduate and graduate students
+          </li>
+          <li>
+            <strong>Demographics:</strong> 96% of students from New Hampshire
+          </li>
+          <li>
+            <strong>Clubs and Organizations:</strong> Variety of student-run clubs and organizations
+          </li>
+          <li>
+            <strong>Events:</strong> Many social and academic student events
+          </li>
+          <li>
+            <strong>Housing:</strong> UNH Housing close to campus and steps from downtown
+          </li>
+          <li>
+            <strong>Discounts:</strong> Student discounts at over 50 local retail stores, restaurants, ski resorts, theatres, museums, and more
+          </li>
+        </ul>
+      </div>
+      <!-- Academics Information -->
+      <div class="info-section">
+        <h6>Academics</h6>
+        <ul class="w3-text-grey">
+          <li>
+            <strong>Areas of Study:</strong> 50+
+          </li>
+          <li>
+            <strong>Degrees:</strong> Bachelor’s and graduate degrees offered
+          </li>
+          <li>
+            <strong>Focus:</strong> Experience-driven with a focus on emerging fields
+          </li>
+          <li>
+            <strong>Student to Faculty Ratio:</strong> 10:1
+          </li>
+          <li>
+            <strong>Faculty/Staff:</strong> 120+
+          </li>
+          <li>
+            <strong>Class Size:</strong> 98% of classes have fewer than 30 students
+          </li>
+          <li>
+            <strong>Library Resources:</strong> 2.8 million print and electronic resources in the library
+          </li>
+          <li>
+            <strong>Study Abroad:</strong> 570+ Study Abroad programs available
+          </li>
+          <li>
+            <strong>Millyard Scholars Program:</strong> Connects biotechnology, engineering technology, biological sciences, analytics and data science, computer science, and computer information systems students with scholarships and research opportunities
+          </li>
+          <li>
+            <strong>Labs and Studios:</strong> 16+ cutting-edge labs and studios
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- UNHM Official Site -->
+  <section id="additional-info" class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Additional Questions?</h1>
+        <h5 class="w3-padding-32">Explore more about Applying to University of New Hampshire at Manchester:</h5>
+        <p class="w3-text-grey"> Visit the official University of New Hampshire at Manchester website for additional detailed information, resources, and support. <a href="https://manchester.unh.edu/admissions/military-veteran-students" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i> University of New Hampshire at Manchester Website </a>
+        </p>
+      </div>
+      <div class="w3-third w3-center">
+        <div class="w3-panel w3-leftbar ">
+          <img src="img/unhm-sign.jpg" style="width:100%; padding-bottom:100px; border-radius: 80%; display: block; margin-left: auto; margin-right: auto;" alt="Image" class="w3-margin-top">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact/Area Container -->
+  <div class="w3-container" id="findus" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h2 class="w3-center w3-padding-48">
+        <span class="w3-tag w3-wide">Location</span>
+      </h2>
+      <p>Find us at: 88 Commercial St, Manchester, NH 03101</p>
+      <img src="img/manchester.jpeg" alt="City of Manchester" class="w3-image" style="width:100%">
+      <p>
+        <span class="w3-tag">Contact Us</span> Any further questions you may have can be asked below.
+      </p>
+      <p>
+        <strong>Response Time:</strong> Please allow 1-2 days for a response.
+      </p>
+      <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <p>
+          <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name">
+        </p>
+        <p>
+          <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required="" name="Message">
+        </p>
+        <p>
+          <button class="w3-button w3-black" type="submit">Send Message </button>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!-- End page content -->
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+    </p>
+  </footer>
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+  </script>
+  </body>
+</html>
